@@ -1,0 +1,46 @@
+/****************************************
+ * 17 [SHOWCASE-UI] FRONTPAGE 
+ * Showcase Interface
+ * 
+ ***************************************/
+
+div.apslideshow{border-bottom:0 none !important;position:static;width:580px;margin:-0.4em 0 0 0.3em;padding:0.2em 0.2em 0.6em 0.4em}
+div.apslideshow:after{content:".";display:block;height:0;font-size:0;clear:both;visibility:hidden}
+div.apslideshow img{border:none}
+#fpss-container{clear:left;width:576px;border-color:#dfdfdf #cecece #ddd #dfdfdf;border-style:solid;border-width:1px 2px 2px 1px;margin:2px auto 4px !important;padding:4px !important}
+* html #fpss-container{clear:both}
+#fpss-slider{overflow:hidden;background:none;clear:left}
+.slide{position:absolute;overflow:hidden}
+#slide-wrapper{display:none;font-size:11px}
+#slide-loading{background:transparent url(http://static.animepaper.net/images/v5/bits/loading.gif) no-repeat center;text-align:center}
+#slide-outer .slide-inner{position:relative;color:#fff;overflow:hidden;background:#505050;margin:0}
+#fpss-slider,#slide-loading,.slide{width:576px;height:400px}
+#slide-outer,#slide-outer .slide-inner{height:400px}
+.fpss_introtext{width:auto !important;position:absolute;bottom:0;left:0;right:0;background:transparent url(http://static.animepaper.net/images/v5/bits/transparent_bg.png) !important;margin:0 !important;padding:0.6em 4px}
+#navi-outer{clear:left;border-top:2px solid #505050;color:#fff;height:46px;background:#505050;margin:0;padding:0.4em 0 1.2em !important}
+* html #navi-outer{height:25px}
+#navi-outer ul{display:inline;text-align:right;float:left;margin:2px 0;padding:0 16px}
+#navi-outer li{display:inline;background:none;margin:0;padding:0}
+#navi-outer li a,#navi-outer li a:hover,#navi-outer li a.navi-active{display:block;float:left;overflow:hidden;width:50px !important;height:50px !important;text-decoration:none;line-height:50px;background:#404040;margin:0 2px;padding:0}
+#navi-outer li a img{margin-left:-0.1em !important}
+#navi-outer li a{border:1px solid #bbb}
+#navi-outer li a:hover{border-color:#8EEBFE}
+#navi-outer li a.navi-active{border:1px solid #f90}
+#navi-outer li a img,#navi-outer li a:hover img,#navi-outer li a.navi-active img{height:80px;width:auto;display:block;margin:-5px 0 0 -55px}
+* html .fpss_introtext{background-image:url(http://static.animepaper.net/images/v5/bits/transparent_bg.gif) !important}
+#navi-outer li.noimages a{font-family:Tahoma, Arial, sans-serif;font-size:10px;border:none;text-align:center;width:auto;background:none;margin:0;padding:0 4px}
+#navi-outer li.noimages a:hover{font-family:Tahoma, Arial, sans-serif;font-size:10px;border:none;text-align:center;width:auto;background:none;color:#F90;margin:0;padding:0 4px}
+.fpss_introtext h1{font-size:14px;margin:4px;padding:0}
+.fpss_introtext h2,.fpss_introtext h3{font-size:12px;margin:0 0 4px !important;padding:0 !important}
+.fpss_introtext h3{font-size:11px}
+.fpss_introtext p{margin:4px;padding:0}
+#fpss-container .fpss_introtext h2,#fpss-container .fpss_introtext h1{background-image:none}
+#fpss-container li.slidenext,#fpss-container li.slideprev,#fpss-container a#playButton{display:none !important}
+#fpss-container .fpss_introtext h1{font-size:170%;margin-bottom:0.1em;padding-left:0.2em}
+#fpss-container .fpss_introtext h1 a{letter-spacing:normal;color:#07AAEC}
+#fpss-container .fpss_introtext h1 a:hover{color:#C84344;background-color:transparent;border-bottom:0 none}
+#fpss-container .fpss_introtext h2{margin-top:0;margin-bottom:0.8em;padding:0 0 0.3em 0.4em !important}
+#fpss-container .fpss_introtext h2,#fpss-container .fpss_introtext h2 a{color:#9AAEBF !important;font-size:110%;letter-spacing:normal}
+#fpss-container .fpss_introtext h2 a{color:#9AAEBF !important;letter-spacing:0.2em;text-decoration:none}
+#fpss-container .fpss_introtext h2 a:hover{text-decoration:underline}
+#navi-outer li a span,.fpss_introtext img,.fpss_introtext p img{display:none}

@@ -1,0 +1,538 @@
+  body {
+	background: burlywood;
+	font-size: 16px;
+	font-family: 'MerriweatherRegular';
+	width: 100%;
+	margin: 8px 0px;
+  }
+
+  div {
+	overflow: hidden;
+	line-height: 1.5;
+  }
+
+  @font-face {
+	font-family: 'MerriweatherBlack';
+	src: url('../fonts/Merriweather-Black.otf'),
+	url('fonts/font.eot'); /* IE9 */
+  }
+
+  @font-face {
+	font-family: 'MerriweatherBold';
+	src: url('../fonts/Merriweather-Bold.otf'),
+	url('fonts/font.eot'); /* IE9 */
+  }
+
+  @font-face {
+	font-family: 'MerriweatherRegular';
+	src: url('../fonts/Merriweather-Regular.otf'),
+	url('fonts/font.eot'); /* IE9 */
+  }
+     
+  .wrapper {
+	min-width: 200px;
+	width: 100%;
+	max-width: 900px;
+	position: relative;
+	margin: auto;
+ }
+   
+  header {
+	width: 96%;
+	height: 90px;
+	margin: auto;
+  }
+   
+  .logo {
+	width: 49%;
+	height: 50px;
+	border-radius: 10px;
+	float: left;
+	overflow: hidden;
+	background: #64AAF6;
+  }
+
+  .logo a img {
+	width: 100%;
+	height: 50px;
+	display: none;
+  }
+
+  .logo a {
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+  }
+   
+  nav {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+  }
+
+  /*-.h-nav {
+	background: green;
+  }
+
+  .a-nav {
+	background: crimson;
+  }
+
+  .f-nav {
+	background: mediumpurple;
+  }
+
+  .d-nav {
+	background: pink;
+  }
+
+  .r-nav {
+	background: orange;
+  }
+
+  .j-nav {
+	background: aliceblue;
+  }-*/
+     
+  ul.head-nav {
+	width: 100%;
+	height: 100px;
+	padding: 0px;
+  }
+
+  ul.sdlink-nav {
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	background: #ccc;
+  }
+     
+  li.head-li {
+	list-style: none;
+	display: block;
+	float: left;
+	font-size: 1em;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+  }
+
+  li.sdlink-li {
+	list-style: none;
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+	text-align: center;
+	background: #fff;
+  }
+     
+  a {
+	display: block;
+	text-decoration: none;
+  }
+     
+  .main-nav {
+	color: black;
+	transition: background-position 0.3s ease;
+	background: url("../Images/nav-bg.jpg");
+  }
+
+  .main-nav:hover {
+	text-align: center;
+	height: 80px;
+	color: white;
+	background: url("../imgs/nav-bg.jpg") 0 -40px;
+        
+  }
+     
+  .page-wrapper {
+	width: 96%;
+	height: 100%;
+	margin: 5px auto;
+	overflow: hidden;
+  }
+     
+  .page {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: auto;
+	display: none;
+  }
+     
+  .page.home {
+	display: block;
+  }
+
+  .page.about {
+	background: #fff;
+  }
+     
+  .banner {
+	width: 95.5%;
+	height: 100px;
+	margin: auto;
+	padding: 5px;
+	border-radius: 5px;
+	background: #64AAF6;
+  }
+     
+  .banner div {
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+  }
+     
+  .main-links {
+	width: 100%;
+	height: 100%;
+	margin-top: 5px;
+  }
+     
+  .link {
+	width: 95.5%;
+	height: 100%;
+	margin: auto;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background: #64AAF6;
+  }
+
+  .link:last-child {
+	margin-bottom: 0px;
+  }
+     
+  .link a {
+	height: 180px;
+	margin-bottom: 5px;
+	background: #ddd;
+  }
+
+  .link a img {
+	width: 100%;
+	height: 180px;
+  }
+     
+  section {
+	height: 100%;
+	max-width: 630px;
+	background: #fff;
+	border-radius: 5px;
+	margin: auto;
+	padding: 5px;
+	overflow: hidden;
+  }
+
+  section.type2 {
+	float: left;
+	width: 70%;
+  }
+
+  .hidden {
+	display: none;
+  }
+
+  .sdlink-img {
+	width: 100%;
+	height: 60px;
+  }
+
+  .sidelink {
+	float: right;
+	padding: 10px 0px;
+	width: 23%;
+	border-radius: 5px;
+	background: #ddd;
+  }
+     
+  article {
+	font-size: 1em;
+	font-family: 'MerriweatherRegular';
+  }
+
+  article.main {
+	font-size: 1.5em;
+	font-family: 'MerriweatherRegular';
+  }
+     
+  h1 {
+	font-size: 2em;
+	font-family: 'MerriweatherBlack';
+  }
+     
+  h2 {
+	font-size: 1.5em;
+	font-family: 'MerriweatherBold';
+  }
+
+  h1, h2 {
+	margin: 0px;
+  }
+      
+  footer {
+	height: 30px;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	background: #4D7EB3;
+  }
+
+  .copyright {
+	font-size: .75em;
+	line-height: 30px;
+	float: left;
+	font-family: 'MerriweatherRegular';
+  }
+
+  .foot-box {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	float: right;
+	background: #fff;
+  }
+
+  .foot-box img {
+	width: 30px;
+	height: 30px;
+  }
+/*---------------------------------------------------------------------------------*/
+/*-  @media screen and (min-width: 200px) {-*/
+  .page-wrapper {
+	margin-top: 0px;
+  }
+
+  .logo.half {
+	margin-left: 2%;
+	display: none;
+  }
+
+  nav {
+	height: 40px;
+	border-radius: 10px;
+	margin: auto;
+  }
+
+  ul.head-nav {
+	height: 40px;
+	margin: 0px;
+  }
+
+  li.head-li {
+	width: 13.636363636363636363636363636364%;
+	height: 30px;
+	margin-right: 2.2727272727272727272727272727273%;
+	margin-top: 5px;
+	background: #fff;
+  }
+
+  li.head-li:first-child {
+	margin-left: 3.3181818181818181818181818181818%;
+  }
+
+  li.head-li a {
+	display: none;
+  }
+
+  li.head-li:hover {
+	cursor: pointer;
+  
+  }
+
+  .link.f {
+	margin: auto;
+	margin-bottom: 5px;
+  }
+
+  .link a img, .link a {
+	height: 100px;
+	display: none;
+  }
+
+  .main-sub {
+	display: none;
+  }
+
+  footer {
+	width: 92%;
+	margin: auto;
+  }
+
+  .foot-box {
+	display: none;
+  }
+/*-  }-*/
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 300px) {
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 400px) {
+  header {
+	height: 100px;
+  }
+
+  .page-wrapper {
+	margin: 5px auto;
+  }
+   
+  .logo {
+	width: 22.222222222222222222222222222222%;
+	height: 100px;
+	float: left;
+	margin: 0px;
+	border-radius: 10px 0px 0px 10px;
+  }
+
+  .logo.half {
+	display: none;
+  }
+
+  .logo a img {
+	height: 100px;
+  }
+
+  .logo a {
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+  }
+
+  nav {
+	width: 77.777777777777777777777777777778%;
+	height: 10px;
+	padding: 45px 0px;
+	float: left;
+	border-radius: 0px 10px 10px 0px;
+	clear: none;
+  }
+
+  li.head-li {
+	margin-top: 15px;
+  }
+
+  section.type2 {
+	width: 73%;
+  }
+
+  .banner {
+	height: 150px;
+  }
+
+  .foot-box {
+	display: block;
+  }
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 500px) {
+  .banner {
+	height: 200px;
+  }
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 550px) {
+  .logo a {
+	font-size: 1.5em;
+  }
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 600px) {
+  .logo a {
+	font-size: 1.5em;
+  }
+  .banner {
+	width: 89%;
+  }
+
+  .main-links {
+	width: 90%;
+	margin: auto;
+	margin-top: 5px;
+  }
+
+  .link, .link.f {
+	height: 200px;
+	max-width: 30.74%;
+	margin-right: 1%;
+	margin-bottom: 0px;
+	float: left;
+  }
+
+  .link a img, .link a {
+	display: block;
+  }
+
+  .link:last-child {
+	margin-right: 0px;
+  }
+
+  section.type2 {
+	width: 74%;
+  }
+
+  footer {
+	width: 95%;
+  }
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 600px) and (min-height: 0px) {
+  .link, .link.f {
+	max-width: 150px;
+  }
+
+  .link.f {
+	margin-left: 1%;
+  }
+  }
+
+  @media screen and (min-width: 610px) {
+  .link.f {
+	margin-left: 2%;
+  }
+  }
+
+  @media screen and (min-width: 600px) and (min-height: 591px) {
+  .link.f {
+	margin-left: 2%;
+  }
+  }
+
+  @media screen and (min-width: 617px) {
+  .link, .link.f {
+	max-width: 30.70%;
+  }
+
+  .link.f {
+	margin-left: 0px;
+  }
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 730px) {
+  .link:first-child {
+	margin-left: 1%;
+  }
+  }
+/*---------------------------------------------------------------------------------*/
+  @media screen and (min-width: 1025px) and (min-height: 851px) {
+  .wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+  }
+  }
+
+  @media screen and (min-width: 900px) {
+  li.head-li a {
+	display: block;
+  }
+
+  li.head-li {
+	background: transparent;
+  }
+  }
+/*---------------------------------------------------------------------------------*/

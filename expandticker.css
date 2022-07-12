@@ -1,0 +1,46 @@
+.expandticker{
+border:1px solid purple;
+padding:7px;
+background:pink;
+width: 200px;
+height:130px;
+overflow-y:auto; /*set DIV to scroll if content exceeds ticker height*/
+position: relative;
+}
+
+.expandcontent{
+display:none;
+}
+
+ul.dropdownlist{
+font: normal 13px Verdana;
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+
+list-style-type: none;
+background: pink;
+border: 1px solid crimson;
+padding: 3px;
+}
+
+
+ul.dropdownlist li a{
+display: block;
+background: green;
+color: pink;
+text-decoration: none;
+padding: 3px 5px 3px 3px;
+}
+
+ul.dropdownlist li a:hover{
+background: purple;
+color: red;
+}
+
+ul.dropdownlist li.selected a{
+background: pink;
+color: green;
+}

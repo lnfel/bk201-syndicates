@@ -1,0 +1,438 @@
+/*
+    Font and some styles
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    /*background: #fff;*/
+    border: none;
+    border-radius: 0;
+    /*margin-bottom: 40px;*/
+    /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);*/
+    
+}
+
+.navbar, .navbar .container-fluid {
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    Sidebar
+    Src: https://bootstrapious.com/p/bootstrap-sidebar
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #155db3;
+    /*background: #083e7e;*/ /*#7386D5*/
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #155db3; /*#7386D5*/
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #155db3; /*#7386D5*/
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    /*background: #6d7fcc;*/
+    background: #083e7e;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #083e7e; /*#7386D5*/
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #083e7e; /*#6d7fcc*/
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #083e7e; /*#6d7fcc*/
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    Content Wrap
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    /*padding: 20px;*/
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed-top {
+    z-index: 998;
+}
+
+.col-no-padding {
+    padding: 0px;
+}
+
+.btn-outline-info {
+    color: #083e7e;
+    border-color: #083e7e;
+}
+
+.btn-outline-info:hover {
+    background-color: #083e7e;
+    border-color: #083e7e;
+}
+
+/* ---------------------------------------------------
+    Home Page
+    Src: https://codepen.io/brettsmason/pen/amWXgz
+----------------------------------------------------- */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: ;
+}
+
+.home-section-one {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background: #fff;
+    position: relative;
+    transform: skew(-9deg);
+    z-index: 3;
+    transition: width 0.5s;
+    padding-top: 68px;
+}
+
+.home-section-one:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    left: 0;
+    transform: skew(9deg);
+    z-index: -1;
+}
+
+.home-section-one .section-content {
+    position: relative;
+}
+
+.home-section-one .section-content .logo {
+    /*position: absolute;
+    width: 825px;*/
+}
+
+.logo {
+    opacity: 0;
+}
+
+.home-section-one .section-content .d-flex {
+    position: absolute;
+}
+
+.top {
+    height: 300px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.sticky {
+    opacity: 0;
+    transform: scale(.5);
+    transition: all .5s ease-in-out;
+}
+
+/*-----------------------------------*/
+
+.nav-logo {
+    transition: all .5s ease-in-out;
+}
+
+.nav-logo img {
+    height: 60px;
+    transition: all .5s ease-in-out;
+}
+
+.nav-logo .display-4 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+/*-----------------------------------*/
+
+.nav-logo {
+    opacity: ;
+    transform: scale(1.5);
+    margin-left: 10rem;
+    margin-top: 5.75rem;
+}
+
+.nav-logo img {
+    transform: scale(1.7);
+}
+
+.nav-logo h1 {
+    margin-left: 1rem;
+}
+
+.nav-logo p.lead {
+    margin-left: 3.5rem;
+    transform: scale(.7);
+    transition: all .5s ease-in-out;
+}
+
+.navbar.on .nav-logo {
+    height: 60px;
+}
+
+.navbar.on .container-fluid {
+    /*align-items: center;*/
+}
+
+.navbar.on .nav-logo, .navbar.on .nav-logo img, .navbar.on .nav-logo h1 {
+    transform: scale(1);
+    margin: 0px;
+}
+
+.navbar.on .nav-logo p.lead {
+    opacity: 0;
+}
+
+.home-section-one .section-content.sticky .logo {
+    /*position: fixed;
+    top: 10px;*/
+}
+
+/*::-webkit-scrollbar { 
+    display: none;
+}*/
+
+
+
+.home-section-one .section-content p.lead {
+    padding-top: 8rem;
+}
+
+h1.display-4 {
+    line-height: ;
+    color: #d30000; /*#3ead34*/
+    padding-top: 2rem;
+}
+
+p.lead {
+    text-align: center;
+}
+
+/*-----------------------------------*/
+
+.home-section-two {
+    /*width: 50%;
+    float: left;
+    height: 100%;
+    background: #999;
+    transform: skew(-9deg);
+    position: relative;
+    z-index: 1;
+    transition: width 0.5s;*/
+}
+
+.home-section-two:after {
+    /*content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: #999;
+    top: 0;
+    right: 0;
+    transform: skew(9deg);
+    z-index: -1;*/
+}
+
+.section-content {
+    transform: skew(9deg);
+    padding: 20px;
+    /*color: #fff;*/
+    text-align: ;
+}
+
+textarea {
+  resize: none;
+}
+
+.section-content h2, .section-content form {
+    margin-left: 4rem;
+}
+
+.home-section-two {
+    height: 100vh;
+    background: url(../imgs/lighthouse.jpg) right no-repeat;
+    background-size: cover;
+}
+
+.section {
+    padding: 3rem;
+}
+
+#about {
+    background-color: #155db3;
+    color: #fff;
+}
+
+#about p {
+    color: #fff;
+}
+
+p {
+    color: #212121;
+}
+
+.footer {
+    background: url(../imgs/pattern.jpg);
+}

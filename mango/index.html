@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traveling made easier</title>
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imgs/favicon2.ico" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Bootstrap Date Time Picker CSS -->
+    <link href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="wrapper">
+	<!-- Sidebar -->
+	<nav id="sidebar" class="">
+		<div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="list-unstyled components">
+            <!-- <p>Dummy Heading</p> -->
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <!-- <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li> -->
+            <li>
+                <a href="#">About</a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Packages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Service 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Another Package</a>
+                    </li>
+                    <li>
+                        <a href="#">Another offer</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Destinations</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+	</nav>
+	<!-- Content Wrapper-->
+	<div id="content">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-outline-info">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-logo">
+                    <div class="d-flex align-items-center">
+                        <img class="d-inline" src="imgs/vasta-logo.png" height="150px">
+                        <h1 class="display-4 d-inline">Vasta Travel and Tours</h1>
+                    </div>
+                    <p class="lead">Sample Tagline: Adventure in Batanes like no other.</p>
+                </div>
+            </div>
+        </nav>
+        <!-- Sections -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-no-padding">
+                    <!-- Home Page -->
+                    <div class="home">
+                        <div class="home-section-one d-flex justify-content-start align-items-end">
+                            <div class="section-content">
+                                <!-- <div class="logo">
+                                    <div class="d-flex align-items-center fixed-top">
+                                        <img class="d-inline-block" src="imgs/vasta-logo.png" height="150px">
+                                        <h1 class="display-4 d-inline-block">Vasta Travel and Tours</h1>
+                                    </div>
+                                    <p class="lead">Sample Tagline: Adventure in Batanes like no other.</p>
+                                </div> -->
+                                <!-- <div class="top">
+                                    <div class="hero"></div>
+                                </div> -->
+                                <h2 class="">Make a reservation today!</h2>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <form>
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="First name" required>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Last name" required>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Phone">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="E-mail *" required>
+                                                </div>
+                                            </div>
+                                            <h3>Travel details</h3>
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <div class='input-group date' id='datetimepicker6'>
+                                                            <input type='text' class="form-control" placeholder="Arrival"/>
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <div class='input-group date' id='datetimepicker7'>
+                                                            <input type='text' class="form-control" placeholder="Departure"/>
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Number of Travellers">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col form-group">
+                                                    <label for="exampleFormControlTextarea1">Notes</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-section-two">
+                            <div class="section-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="about" class="section col">
+                    <h1>What we do</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section col">
+                    <h1>Why choose us?</h1>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="imgs/sample-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reason 1</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/sample-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reason 2</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/sample-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Reason 3</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 text-center">
+                <div class="col p-0">
+                    <h2 class="text-danger m-4">Contact Us</h2>
+                    <button class="btn btn-outline-primary">
+                        <span>Need Help?</span><br>
+                        CONTACT SUPPORT
+                    </button>
+                    <p class="m-4">
+                        <strong class="m-4">
+                            Sample Address: 6/F, The Centerpoint Building, Julia Vargas Avenue cor. Garnet Street, Ortigas Center, Pasig City, Philippines
+                            <br><br>
+                            +632 317 35 00
+                        </strong>
+                    </p>
+                    <p>&copy; Copyright 2019 | Vasta Travel and Tours</p>
+                    <div class="footer d-block mt-4 p-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- Dark Overlay element -->
+    <div class="overlay"></div>
+</div>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<!-- JQuery -->
+   <!--  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <!-- Bootstrap Date Time Picker JS -->
+    <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script> -->
+<!-- Popper.JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Font Awesome JS -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function () {
+            // hide sidebar
+            $('#sidebar').removeClass('active');
+            // hide overlay
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            // open sidebar
+            $('#sidebar').addClass('active');
+            // fade in the overlay
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+
+        // var wrap = $(document.body);
+        // var wrap2 = $('body');
+
+        // wrap2.scroll(function() {
+            
+        //   if (wrap2.scrollTop > 100) {
+        //     wrap2.addClass("fix-logo");
+        //     console.log("greater than 300px");
+        //   } else {
+        //     wrap2.removeClass("fix-logo");
+        //   }
+          
+        // });
+
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            
+            if (scroll > 120) {
+                /*$(".home-section-one .section-content").addClass("sticky");*/
+                $(".navbar").addClass("on");
+                console.log("Greater than 120");
+            } else {
+                // $(".home-section-one .section-content").removeClass("sticky");
+                $(".navbar").removeClass("on");
+                console.log("less than 120");
+            }
+
+            /*if ($("#about").scrollTop)*/
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+<script>(function(){window['__CF$cv$params']={r:'7276de99bbf04d6f',m:'Bk.BKxXBJmalhTJjU.UyXjtb0zqtZsdI7zuuW9aL5Ng-1657262857-0-AU0OICgaYFp73Ak2QimnhkosoDRQDWOFo5PKFhKkwr51nmSMflI0uxerEB3JUww9IHLHgttnWCE5lvpi6cEBj0/JbSzoULQcZ2WC35tzsM5hTIRJIYeEF+n01qRTNGzpjY8Or8PICzXIxXANzJXE25k=',s:[0xc2d1540afd,0x9ce6ece61e],}})();</script></body>
+</html>

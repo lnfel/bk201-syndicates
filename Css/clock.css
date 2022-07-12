@@ -1,0 +1,10 @@
+/* defining styles for our clock through a class called TimeBox */
+.TimeBox {
+border:#0083C1 1px solid; /* border color, size, and type */
+font-size:10pt; /* font size to use*/
+background-color:purple; /* background color of the time/input box */
+color:red; /* font color*/
+font-family:"viner hand itc", Courier, monospace; /* type of font*/
+text-align:center; /* align our time to the center*/
+font-weight:; /* display time bold-type */
+}
